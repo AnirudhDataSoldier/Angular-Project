@@ -1,0 +1,165 @@
+{
+    "questions": [{
+            "questionText": "Where is the headquarters of Novartis?",
+            "options": [{
+                    "text": "Basel",
+                    "correct": true
+                },
+                {
+                    "text": "Hyderabad"
+                },
+                {
+                    "text": "Slovenia"
+                },
+                {
+                    "text": "New York"
+                }
+            ],
+            "explanation": "Headquarters of Novartis is in Basel Switzerland"
+        },
+        {
+            "questionText": "Who is the CEO of Novartis?",
+            "options": [{
+                    "text": "Satya Nadela"
+                },
+                {
+                    "text": "Amit Nastik"
+                },
+                {
+                    "text": "Stephen Lang"
+                },
+                {
+                    "text": "Vas Narsimhan",
+                    "correct": true
+                }
+            ],
+            "explanation": "Vas Narsimhan is the CEO of Novartis"
+        },
+        {
+            "questionText": "As of 2021, how many employees does Novartis employ?",
+            "options": [{
+                    "text": "20000"
+                },
+                {
+                    "text": "110000",
+                    "correct": true
+                },
+                {
+                    "text": "55000"
+                },
+                {
+                    "text": "12000"
+                }
+            ],
+            "explanation": "Novartis Employes 110000 employees as of 2021"
+        },
+        {
+            "questionText": "Who founded Novartis",
+            "options": [{
+                    "text": "Niel Bohr"
+                },
+                {
+                    "text": "Johann Rudolf",
+                    "correct": true
+                },
+                {
+                    "text": "Richard Feynman"
+                },
+                {
+                    "text": "Quintin Terantino"
+                }
+            ],
+            "explanation": "johann Rudolf is the founder of Novartis"
+        },
+        {
+            "questionText": "Who manufactures Zolgesma",
+            "options": [{
+                    "text": "Novartis",
+                    "correct": true
+                },
+                {
+                    "text": "Sandoz"
+                },
+                {
+                    "text": "Pfizer"
+                },
+                {
+                    "text": "Dr. Reddys"
+                }
+            ],
+            "explanation": "Novartis manufactures Zolgesma"
+        },
+        {
+            "questionText": "Which companies mergerd to become Novartis",
+            "options": [{
+                    "text": "Sandoz & Pfizer"
+                },
+                {
+                    "text": "Sanzod & Cipla"
+                },
+                {
+                    "text": "Sandoz & Lupin"
+                },
+                {
+                    "text": "Ciba Geigy & Sandoz",
+                    "correct": true
+                }
+            ],
+            "explanation": "Ciba Geigy & Sandoz merged to form Sandoz"
+        },
+        {
+            "questionText": "Where is NKC located?",
+            "options": [{
+                    "text": "Mumbai"
+                },
+                {
+                    "text": "Hyderabad",
+                    "correct": true
+                },
+                {
+                    "text": "Pune"
+                },
+                {
+                    "text": "Bangalore"
+                }
+            ],
+            "explanation": "NKC is in Hyderabad"
+        },
+        {
+            "questionText": "Fight against _____ is Novartis's Philanthrophy initiative",
+            "options": [{
+                    "text": "Leprocy",
+                    "correct": true
+                },
+                {
+                    "text": "TB"
+                },
+                {
+                    "text": "Cancer"
+                },
+                {
+                    "text": "HIV/AIDs"
+                }
+            ],
+            "explanation": "Fight against Leprosy is Novatis's Philanthrophy initiative"
+        },
+        {
+            "questionText": "Who leads the operations at Novartis",
+            "options": [{
+                    "text": "Stephen Lang",
+                    "correct": true
+                },
+                {
+                    "text": "Bernd Bucker"
+                },
+                {
+                    "text": "Satish Muley"
+                },
+                {
+                    "text": "Amit Nastik"
+                }
+            ],
+            "explanation": "Stephen Lang is Novartis Operations head"
+        }
+    ]
+}

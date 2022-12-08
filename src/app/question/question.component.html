@@ -1,0 +1,64 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="d-flex justify-content-between p-3">
+            <div class="image">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAb1BMVEX///8AAAD6+vofGhf09PTm5ubg394jHRtCPz/k4+PKycqurq739/cNAADDwsLc29sXDgvT0tIsKyobFRK3trZ3dnWYmZlZWFeop6c0MS9RT04wLCmSkZESDAZramo8OjmFhIRkYmIoJCFIR0UWCQy/xPY6AAAE6klEQVRoge2Zi5KbOgyGLXMNd2LuYK77/s9YmUCANqRNa87OmfE3Oxlwsv6xLEuyIUShUCgUCoVCoVAo/gzDfIkuWcZLCufYYtZwwuBJFDYaC7ts900U+Jn08Yf/RJiicDcwSHaNLrDAeEkGcJOiS50BxzG5Oumh37VnkJ/8hw4Qy1BOJhTOxTR7AzRHaXqpdILCaUjEbMPRjldLUwtSsVZiNLo/Hlz8cmkAVE5sHHE0Hb+63OAT5JkN3EoTjR/7u9zNHLFMWdQRMkB6+KaAu6m/wgsAQgnSJE6HIhZ94UMY+y8MiCz7Jb5fyQtnKY6YVpA97pYYncAXexHJfPY1mtKUSShGjOsML72CreaMo6hxf6H1R3nCSAU98Upwbz1g6F6Wd8j8F3OKPiBVOgBLx05HtDAr18aQodN74R5DeL5caaJBFkzch7zwn94WR35Mcj/a4JqB0pZc6UykSN7GYpH1S1vuWwZOhb8DHwuXViZR2OjR1KyfHTeYAxyCQd1Fd4/3CIO0PjjvOvuEuBVhpVjXagnF3Ao/xZgn1tcoqUZCk7Ip2O7R26iIltw+ieE38M9i7GfQEiq/27eAqFZyfl6KuHDI7H+PYTzygZksZmwwcWRwqJZ+IgUIzr/9iBTaMNVWzzVwUPxsomf0yZc13SGIaN2tsQt9OCpPJvpBjClEjjSpeJRvKyYGpv0mLbpvJ+QTMJDu82B1MHfcdCNhU3N4mlaSlxNyhyzehhHA+MzdRg78XpI7RrthN7+Y595OyZ+DBT/fvJbaz2CJxndpWpM70zTf2hJ1IE3au0dWu9ncBe1xcQMbx79Ia3wzhjxpXMw2fprLfOrl4kUTE0ZepTV/uED6xsAR1fgyrBTmAJc8JuEprT0zh0RpFPOf+9eixIUuCt7hUQyl91XaXzeZMqVD0Fgvwva8BWK2ENFnb6O0t1dp1nnypZdCfM6gXeaZYgdmzDNOaTo9pa2bbGnvUSMEFQpXgRiZqBTNear30hozJUtT9GM68RK3XoOz9q3pOGpKCSUphhRmzdLr8pIkTXE3Qzzq+ve6DwnFMXvYUEPh1Q1eUuHhZV3XmlWPE5Uq7SFU96hmubMqnRsK6LwU8JHQ4B3prLoe69rqiUxpqlP8Q5NnLPcCg+hCGJ+FQ2Kii+MNSpfjiNLdOtWyRj1r6WItjTW0863YeDVfFa72mNBNOhITIFMaDTz7OEmx/4djJSwht5o7pOPo5MLNaqu2RMSRK/0EC2D0b88UZSlWxC2udL2CNn4EUgbtljUdydLzYnYnUfqLPBLM26tiBCgJftzd3S+lS2O1Io4nl8QdwhzCvaBJSdoEBynp0qSLvvxsNWsM51tp+dLuvPVYaOC87JQvrS87rvn6Du7pD+VLi23HejI1QHle518gTQfghUgmYQWMnVfjF0gTPQfQhnYCsMo3u58rpEU4AY5Vd2s4wE8tfo009otbPyoy+PmGMtsvBZm08zsGl8PZ4dxNg/4SZRHMXbfDWsm4vcQt+fFYUyKpOKbmaa5Zr4jQG2Tt7X+BZuVkQ++evPJhuZS3H6c4YIXOa64y9pNJ0mnNX5AAk/ke7xN0e8sl/zXZm4R9MQaTdj72Mf3pa5/LMeA0lF5O+/bU8FJiuCxW/5buO8PKmwLtYth3hhWZb1k+49vcTKFQKBQKhUKhUPyf+AGVmUh7C9ittQAAAABJRU5ErkJggg==" width="90" alt="logo">
+            </div>
+            <div class="quiz-header">
+                <h4 style="font-family: cursive;">Angular & TypeScript Quiz!</h4>
+                <span style="font-style: italic;">Welcome {{name}}</span>
+            </div>
+        </div>
+
+        <ng-container *ngIf="!isQuizCompleted">
+            <div class="d-flex justify-content-around py-3">
+                <div class="score">
+                    <h5>{{points}} Points</h5>
+                </div>
+                <div class="question-remain">
+                    <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+                </div>
+                <div class="timer">
+                    <h5>{{counter}} sec ⏱</h5>
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="question">
+                <div class="card">
+                    <h3>{{questionList[currentQuestion]?.questionText}}</h3>
+                </div>
+            </div>
+            <div class="options">
+                <ol *ngFor="let option of questionList[currentQuestion]?.options">
+                    <li (click)="answer(currentQuestion+1,option)">
+                        <div appChangeBg [isCorrect]="option.correct" class="card">
+                            {{option.text}}
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button [disabled]="currentQuestion===0" class="btn" (click)="previousQuestion()"><i class="fa text-primary fa-chevron-left fa-3x" aria-hidden="true"></i></button>
+                <button class="btn" (click)="resetQuiz()"><i class="fa fa-refresh text-primary fa-3x" aria-hidden="true"></i></button>
+                <button class="btn" (click)="nextQuestion()"><i class="fa text-primary fa-chevron-right fa-3x" aria-hidden="true"></i></button>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="isQuizCompleted">
+            <div class="row d-flex justify-content-between">
+                <img style="width: 50%;" class="img-fluid col-sm-12 mx-auto" src="https://icon-library.com/images/celebration-icon-png/celebration-icon-png-7.jpg" alt="">
+                <div class="result text-center col-md-6 col-sm-12">
+                    <h3>Congratulations!! <br>You have completed the quiz. <br>Below is your result:</h3>
+                    <p>Total Question Attempted : {{questionList.length}} </p>
+                    <p>Total Correct Answered : {{correctAnswer}} </p>
+                    <p>Total Wrong Answered : {{inCorrectAnswer}} </p>
+                    <p>Your Score : {{points}} Points </p>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

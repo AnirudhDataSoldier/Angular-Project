@@ -1,0 +1,17 @@
+<div class="container bg-light py-5">
+    <h1 class='display-5 fw-bold'> Welcome to Novartis Quiz </h1>
+    <p class="col-md-8 fs-4">The quiz will contain total 10 questions about Novartis. Good Luck!</p>
+    <h4>Rules:</h4>
+    <ol>
+        <li> Each question Carries +10 point for right answer!</li>
+        <li> Each question Carries -10 for incorrect answer!</li>
+        <li> Each question has 10 seconds to answer!</li>
+        <li>Refereshing the page will automatically reset the test!</li>
+    </ol>
+    <h1 style='font-family: cursive;text-align:center'> All the best! have Fun :)</h1>
+    <div class='name col-md-4 my-3'>
+        <label for=""> Enter you 521 ID:</label>
+        <input #name type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary btn-lg" routerLink="/question" (click)='startQuiz()'>Start the quiz!</button>
+</div>
